@@ -1,0 +1,66 @@
+.title{
+    margin: auto; 
+    color:primary ;
+}
+.secondDiv {
+    border: 1px solid ;
+    border-radius: 10px;
+    width: 30%;
+    display: grid;
+    background-color: white;
+    padding: 10px ;
+    height: 100%;
+    margin: auto;
+}
+
+.txt1{
+    width:100%;
+}
+
+.formSignIn {
+    margin-top: 15px;
+    width: 90%;
+    display: grid;
+    row-gap: 10px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+@media (max-width:390px) {
+    .bodySignIn{
+        margin-top: 50px
+    } 
+    .txt{
+        width:100%
+    }
+    .secondDiv{
+        width: 70%
+
+    }
+}
+@media (max-width:388px) {
+    .bodySignIn{
+      width: 100%;
+    } 
+    .txt{
+        width:100%
+    }
+    .secondDiv{
+        width:90% !important;
+    }
+}
+@media (max-width:750px) {
+    .txt{
+        width:100%
+    }
+    .secondDiv{
+        width: 40%
+
+    }
+}
+
+
+
+
+

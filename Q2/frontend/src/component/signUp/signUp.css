@@ -1,0 +1,76 @@
+.title{
+    margin: auto; 
+    color:primary ;
+}
+
+.secondaryDiv {
+    border: 1px solid ;
+    border-radius: 10px;
+    margin: auto;
+    width: 50%;
+    display: grid;
+    background-color: white;
+    padding: 10px ;
+    height: 100%;
+    align-items: center;
+    margin-left: auto;
+    margin-left: auto;
+}
+
+.txt{
+    width:100%
+}
+.form {
+    margin-top: 15px;
+    width: 90%;
+    display: grid;
+    row-gap: 10px;
+    background-color: white;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    
+
+}
+
+.message {
+    color: red;
+    margin: auto;
+    margin-top: 7px;
+}
+
+
+.Country{
+    width:100%;
+    height: 20px;
+}
+@media (max-width:390px) {
+    .txt{
+        width:100%
+    }
+    .secondaryDiv{
+        width: 70%
+
+    }
+}
+@media (max-width:240px) {
+    .txt{
+        width:100%
+    }
+    .mainDiv{
+        margin-top: 50px
+    } 
+    .rightDiv{
+        width: 90%
+
+    }
+}
+@media (max-width:750px) {
+    .txt{
+        width:100%
+    }
+    .secondaryDiv{
+        width: 70%
+
+    }
+}
