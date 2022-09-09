@@ -20,5 +20,4 @@ app.listen(port, () => {
 
 app.use(cors());
 app.use(express.json());
-// app.use(bodyParser.urlencoded());
 app.use(router)

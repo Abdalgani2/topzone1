@@ -3,7 +3,6 @@ const bcrypt = require("bcrypt");
  const emailvalidator = require("email-validator");
 
 exports.signUp = (req, res) => {
-  console.log("wseel");
   const { name, country, email, password } = req.body;
   User.findOne({ email: email })
     .then(findUser => {
@@ -35,7 +34,6 @@ exports.signUp = (req, res) => {
     });
 }
 exports.signIn = (req,res)=>{
-  console.log("login");
   const { email, password } = req.body;
   User.findOne({ email: email })
   .then(findUser => {
@@ -51,7 +49,6 @@ exports.signIn = (req,res)=>{
     }
     else{
       return res.status(401).send('email not connected to any user');
-
     }
    }); 
   })

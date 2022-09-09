@@ -8,7 +8,6 @@ import { SignUpContext } from '../../context/signUp';
 
 const SignUp = () => {
     const handleSubmit = (e) => {
-        console.log('sub func');
         signUpContext.addNewUser();
         e.preventDefault();
     };
@@ -63,7 +62,7 @@ const SignUp = () => {
                             />
                         </Grid>
 
-                        {/* Password */}
+                        {/* confirm Password */}
                         <Grid item xs={12} sm={6}>
                             <TextField
                                 type="password"
@@ -78,6 +77,7 @@ const SignUp = () => {
                             />
                         </Grid>
                     </Grid>
+                    {/* Country */}
                     <Grid alignItems="center"
                         justifyContent="center" container spacing={1}>
                         <Grid item xs={12} sm={6}>
@@ -100,11 +100,11 @@ const SignUp = () => {
                                 <option value="Jerash">Jerash</option>
                                 <option value="Ma'an">Ma'an</option>
                             </select>
-                            
+
                         </Grid>
                     </Grid>
                     <Grid container spacing={2}>
-                        {/* Name */}
+                        {/* checkbox */}
                         <Grid item xs={12} sm={6}>
 
                             <div className='check'><div><input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" />
